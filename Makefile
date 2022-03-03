@@ -6,7 +6,7 @@
 #    By: arthurdemurger <arthurdemurger@student.    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/03/03 12:59:07 by arthurdemur       #+#    #+#              #
-#    Updated: 2022/03/03 17:03:45 by arthurdemur      ###   ########.fr        #
+#    Updated: 2022/03/03 17:53:48 by arthurdemur      ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -25,13 +25,13 @@ $(NAME):	${OBJS}
 			@gcc ${CFLAGS} $^ -o $@
 			@echo "...Everything compiled!"
 
-all:		${NAME}
+all:		$(NAME)
 
 clean:
 			@rm -f ${OBJS}
 
 fclean:		clean
-			@rm -f ${NAME}
+			@rm -f $(NAME)
 			@echo "...Everything removed!"
 
 re:			fclean all
