@@ -1,13 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_calloc.c                                        :+:      :+:    :+:   */
+/*   ft_strlcpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ademurge <ademurge@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/03/03 18:09:34 by ademurge          #+#    #+#             */
-/*   Updated: 2022/03/04 14:44:33 by ademurge         ###   ########.fr       */
+/*   Created: 2022/03/03 18:10:09 by ademurge          #+#    #+#             */
+/*   Updated: 2022/03/04 19:51:26 by ademurge         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	*ft_calloc()
+unsigned int	ft_strlcpy(char *dest, char *src, unsigned int size)
+{
+	unsigned int	i;
+	unsigned int	c;
+
+	i = -1;
+	c = 0;
+	while (src[c])
+		c++;
+	if (size)
+	{
+		while (src[++i] && i < (size - 1))
+			dest[i] = src[i];
+		dest[i] = 0;
+	}
+	return (c);
+}

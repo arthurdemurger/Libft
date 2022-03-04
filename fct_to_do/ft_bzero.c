@@ -6,7 +6,13 @@
 /*   By: ademurge <ademurge@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/03 18:09:12 by ademurge          #+#    #+#             */
-/*   Updated: 2022/03/04 14:24:11 by ademurge         ###   ########.fr       */
+/*   Updated: 2022/03/04 14:43:32 by ademurge         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
+
+void	ft_bzero(void *s, size_t n)
+{
+	
+}
