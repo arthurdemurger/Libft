@@ -3,14 +3,14 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: arthurdemurger <arthurdemurger@student.    +#+  +:+       +#+         #
+#    By: ademurge <ademurge@student.s19.be>         +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/03/03 12:59:07 by arthurdemur       #+#    #+#              #
-#    Updated: 2022/03/03 17:53:48 by arthurdemur      ###   ########.fr        #
+#    Updated: 2022/03/03 18:28:49 by ademurge         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-SRCS		:= 	do_op.c calcul.c basics.c
+SRCS		:= 	*.c
 
 OBJS		:= $(addprefix srcs/, ${SRCS:.c=.o})
 

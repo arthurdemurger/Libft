@@ -6,7 +6,13 @@
 /*   By: ademurge <ademurge@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/03 18:10:20 by ademurge          #+#    #+#             */
-/*   Updated: 2022/03/03 18:10:21 by ademurge         ###   ########.fr       */
+/*   Updated: 2022/03/04 14:12:38 by ademurge         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+int	ft_tolower(int c)
+{
+	if (c >= 'A' && c <= 'Z')
+		return (c + 32);
+	return (c);
+}
