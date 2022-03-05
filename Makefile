@@ -6,15 +6,30 @@
 #    By: ademurge <ademurge@student.s19.be>         +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/03/03 12:59:07 by arthurdemur       #+#    #+#              #
-#    Updated: 2022/03/03 18:28:49 by ademurge         ###   ########.fr        #
+#    Updated: 2022/03/05 22:05:41 by ademurge         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-SRCS		:= 	*.c
+SRCS		= 	ft_atoi.c \
+				ft_bzero.c \
+				ft_isalnum.c \
+				ft_isalpha.c \
+				ft_isascii.c \
+				ft_isdigit.c \
+				ft_isprint.c \
+				ft_memcpy.c \
+				ft_memset.c \
+				ft_strdup.c \
+				ft_strlcat.c \
+				ft_strlcpy.c \
+				ft_strlen.c \
+				ft_strncmp.c \
+				ft_tolower.c \
+				ft_toupper.c
 
-OBJS		:= $(addprefix srcs/, ${SRCS:.c=.o})
+OBJS		= $(addprefix srcs/, ${SRCS:.c=.o})
 
-NAME		= do-op
+NAME		= test
 
 CFLAGS		= -Wall -Wextra -Werror
 

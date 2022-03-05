@@ -1,20 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memccpy.c                                       :+:      :+:    :+:   */
+/*   ft_strdup.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ademurge <ademurge@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/03/03 18:09:51 by ademurge          #+#    #+#             */
-/*   Updated: 2022/03/05 21:56:37 by ademurge         ###   ########.fr       */
+/*   Created: 2022/03/03 18:10:04 by ademurge          #+#    #+#             */
+/*   Updated: 2022/03/05 22:02:45 by ademurge         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_memccpy(void *dst, const void *src, int c, size_t n)
+char	*ft_strdup(char *src)
 {
-	while (n--)
-		*(char *)(dst++) = *(char *)(src++);
-	return (dst);
+	char	*str;
+	int		i;
+	int		c;
+
+	i = -1;
+	str = (char *)malloc(sizeof(char) * (ft_strlen(src) + 1));
+	if (!str)
+		return (NULL);
+	while (src[++i])
+		str[i] = src[i];
+	str[i] = 0;
+	return (str);
 }

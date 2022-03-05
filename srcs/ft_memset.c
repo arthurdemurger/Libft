@@ -6,7 +6,15 @@
 /*   By: ademurge <ademurge@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/03 18:10:00 by ademurge          #+#    #+#             */
-/*   Updated: 2022/03/03 18:10:01 by ademurge         ###   ########.fr       */
+/*   Updated: 2022/03/05 21:04:27 by ademurge         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
+
+void	*ft_memset(void *s, int c, size_t n)
+{
+	while (n--)
+		*(unsigned char *)(s++) = c;
+	return (s);
+}
