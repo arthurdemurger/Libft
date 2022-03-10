@@ -1,23 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memmove.c                                       :+:      :+:    :+:   */
+/*   ft_putchar_fd.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ademurge <ademurge@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/03/03 18:09:57 by ademurge          #+#    #+#             */
-/*   Updated: 2022/03/10 21:53:03 by ademurge         ###   ########.fr       */
+/*   Created: 2022/03/03 18:24:09 by ademurge          #+#    #+#             */
+/*   Updated: 2022/03/10 21:58:48 by ademurge         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_memmove(void *dst, const void *src, size_t len)
+void	ft_putchar_fd(char c, int fd)
 {
-	/*
-	while (len--)
-	{
-		*(char *)(dst++) = src++;
-	}
-	*/
+	write(fd, &c, 1);
 }
