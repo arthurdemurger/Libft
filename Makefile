@@ -6,7 +6,7 @@
 #    By: ademurge <ademurge@student.s19.be>         +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/03/03 12:59:07 by arthurdemur       #+#    #+#              #
-#    Updated: 2022/03/11 08:48:21 by ademurge         ###   ########.fr        #
+#    Updated: 2022/03/11 13:20:34 by ademurge         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -25,12 +25,14 @@ SRCS		= 	ft_atoi.c \
 				ft_putendl_fd.c \
 				ft_putnbr_fd.c \
 				ft_putstr_fd.c \
+				ft_split.c \
 				ft_strdup.c \
 				ft_strjoin.c \
 				ft_strlcat.c \
 				ft_strlcpy.c \
 				ft_strlen.c \
 				ft_strncmp.c \
+				ft_substr.c \
 				ft_tolower.c \
 				ft_toupper.c
 
