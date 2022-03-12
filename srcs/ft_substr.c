@@ -6,13 +6,13 @@
 /*   By: ademurge <ademurge@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/03 18:22:47 by ademurge          #+#    #+#             */
-/*   Updated: 2022/03/11 13:42:37 by ademurge         ###   ########.fr       */
+/*   Updated: 2022/03/12 13:44:45 by ademurge         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_strlen_substr(char const *s, size_t max_len)
+static int	ft_strlen_substr(char const *s, size_t max_len)
 {
 	size_t	i;
 	char	*str;
@@ -26,7 +26,7 @@ int	ft_strlen_substr(char const *s, size_t max_len)
 	return (i);
 }
 
-char *ft_substr(char const *s, unsigned int start, size_t len)
+char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
 	char	*src;
 	char	*str;
