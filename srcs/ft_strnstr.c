@@ -6,7 +6,7 @@
 /*   By: ademurge <ademurge@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/03 18:10:15 by ademurge          #+#    #+#             */
-/*   Updated: 2022/03/11 17:35:07 by ademurge         ###   ########.fr       */
+/*   Updated: 2022/03/12 14:02:59 by ademurge         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ static int	ft_is_equal(char *str, char *to_find, size_t len)
 		if (str[i] != to_find[i])
 			return (0);
 	if (!(++len))
-		return (0);	
+		return (0);
 	return (1);
 }
 
