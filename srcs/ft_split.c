@@ -6,13 +6,13 @@
 /*   By: ademurge <ademurge@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/03 18:23:28 by ademurge          #+#    #+#             */
-/*   Updated: 2022/03/11 13:18:40 by ademurge         ###   ########.fr       */
+/*   Updated: 2022/03/12 15:00:30 by ademurge         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strdup_split(const char *s, char c)
+static char	*ft_strdup_split(const char *s, char c)
 {
 	int		i;
 	int		count;
@@ -36,7 +36,7 @@ char	*ft_strdup_split(const char *s, char c)
 	return (str);
 }
 
-int	count_words(const char *s, char c)
+static int	count_words(const char *s, char c)
 {
 	int		i;
 	int		count;
@@ -57,7 +57,7 @@ int	count_words(const char *s, char c)
 	return (count);
 }
 
-int	ft_index(const char *s, char c, int index)
+static int	ft_index(const char *s, char c, int index)
 {
 	int		i;
 	int		count;

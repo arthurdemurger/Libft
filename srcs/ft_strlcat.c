@@ -6,11 +6,11 @@
 /*   By: ademurge <ademurge@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/03 18:10:06 by ademurge          #+#    #+#             */
-/*   Updated: 2022/03/05 20:39:30 by ademurge         ###   ########.fr       */
+/*   Updated: 2022/03/12 15:00:42 by ademurge         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-unsigned int	ft_un_strlen(char *str)
+static unsigned int	ft_un_strlen(char *str)
 {
 	unsigned int	i;
 
