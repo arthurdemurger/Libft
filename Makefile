@@ -6,7 +6,7 @@
 #    By: ademurge <ademurge@student.s19.be>         +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/03/03 12:59:07 by arthurdemur       #+#    #+#              #
-#    Updated: 2022/03/12 12:49:51 by ademurge         ###   ########.fr        #
+#    Updated: 2022/03/12 14:55:05 by ademurge         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -32,6 +32,7 @@ SRCS		= 	ft_atoi.c \
 				ft_strlcat.c \
 				ft_strlcpy.c \
 				ft_strlen.c \
+				ft_strmapi.c \
 				ft_strncmp.c \
 				ft_strnstr.c \
 				ft_strrchr.c \
