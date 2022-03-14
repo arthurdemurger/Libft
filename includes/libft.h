@@ -6,7 +6,7 @@
 /*   By: ademurge <ademurge@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/04 14:38:55 by ademurge          #+#    #+#             */
-/*   Updated: 2022/03/14 13:11:16 by ademurge         ###   ########.fr       */
+/*   Updated: 2022/03/14 14:47:47 by ademurge         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,5 +30,14 @@ void			ft_putstr_fd(char *s, int fd);
 char			*ft_strchr(const char *s, int c);
 char			*ft_substr(char const *s, unsigned int start, size_t len);
 void			ft_bzero(void *s, size_t n);
+int				ft_isalpha(int c);
+int				ft_isdigit(int c);
+
+// Bonus - Struct
+typedef struct s_list
+{
+	void			*content;
+	struct s_list	*next;
+}	t_list;
 
 #endif
