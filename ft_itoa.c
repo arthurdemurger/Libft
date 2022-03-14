@@ -6,7 +6,7 @@
 /*   By: ademurge <ademurge@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/03 18:23:26 by ademurge          #+#    #+#             */
-/*   Updated: 2022/03/14 11:58:34 by ademurge         ###   ########.fr       */
+/*   Updated: 2022/03/14 16:08:28 by ademurge         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,7 +40,7 @@ char	*ft_itoa(int n)
 	long	ln;
 	int		i;
 
-	str = (char *)malloc(sizeof(char) * ft_size_to_malloc(n));
+	str = (char *)malloc(sizeof(char) * (ft_size_to_malloc(n) + 1));
 	if (!str)
 		return (NULL);
 	i = ft_size_to_malloc(n);

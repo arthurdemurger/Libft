@@ -6,7 +6,7 @@
 #    By: ademurge <ademurge@student.s19.be>         +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/03/03 12:59:07 by arthurdemur       #+#    #+#              #
-#    Updated: 2022/03/14 14:39:21 by ademurge         ###   ########.fr        #
+#    Updated: 2022/03/14 16:04:23 by ademurge         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -39,11 +39,12 @@ SRCS		= 	ft_atoi.c \
 				ft_strncmp.c \
 				ft_strnstr.c \
 				ft_strrchr.c \
+				ft_strtrim.c \
 				ft_substr.c \
 				ft_tolower.c \
 				ft_toupper.c
 
-OBJS		= $(addprefix srcs/, ${SRCS:.c=.o})
+OBJS		= ${SRCS:.c=.o}
 
 NAME		= libft.a
 

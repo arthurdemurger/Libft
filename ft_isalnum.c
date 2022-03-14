@@ -6,7 +6,7 @@
 /*   By: ademurge <ademurge@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/03 18:09:40 by ademurge          #+#    #+#             */
-/*   Updated: 2022/03/14 14:36:14 by ademurge         ###   ########.fr       */
+/*   Updated: 2022/03/14 16:01:16 by ademurge         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,5 +14,5 @@
 
 int	ft_isalnum(int c)
 {
-	return (ft_isalpha(c) || ft_isdigit(c));
+	return (ft_isalpha(c) || (c >= '0' && c <= '9'));
 }
