@@ -6,7 +6,7 @@
 /*   By: ademurge <ademurge@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/03 18:10:04 by ademurge          #+#    #+#             */
-/*   Updated: 2022/03/05 22:02:45 by ademurge         ###   ########.fr       */
+/*   Updated: 2022/03/14 13:11:31 by ademurge         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,6 @@ char	*ft_strdup(char *src)
 {
 	char	*str;
 	int		i;
-	int		c;
 
 	i = -1;
 	str = (char *)malloc(sizeof(char) * (ft_strlen(src) + 1));

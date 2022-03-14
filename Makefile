@@ -6,7 +6,7 @@
 #    By: ademurge <ademurge@student.s19.be>         +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/03/03 12:59:07 by arthurdemur       #+#    #+#              #
-#    Updated: 2022/03/14 12:46:53 by ademurge         ###   ########.fr        #
+#    Updated: 2022/03/14 13:10:34 by ademurge         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -45,7 +45,7 @@ SRCS		= 	ft_atoi.c \
 
 OBJS		= $(addprefix srcs/, ${SRCS:.c=.o})
 
-NAME		= test
+NAME		= libft.a
 
 CFLAGS		= -Wall -Wextra -Werror
 
@@ -53,7 +53,7 @@ CFLAGS		= -Wall -Wextra -Werror
 			@gcc ${CFLAGS} -I./includes -c $< -o ${<:.c=.o}
 
 $(NAME):	${OBJS}
-			@gcc ${CFLAGS} $^ -o $@
+			@ar -rcs $@ $^
 			@echo "...Everything compiled!"
 
 all:		$(NAME)
