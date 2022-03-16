@@ -6,7 +6,7 @@
 /*   By: ademurge <ademurge@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/03 18:22:47 by ademurge          #+#    #+#             */
-/*   Updated: 2022/03/12 13:44:45 by ademurge         ###   ########.fr       */
+/*   Updated: 2022/03/14 18:57:21 by ademurge         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ static int	ft_strlen_substr(char const *s, size_t max_len)
 	{
 		i++;
 	}
-	return (i);
+	return (i + 1);
 }
 
 char	*ft_substr(char const *s, unsigned int start, size_t len)

@@ -6,11 +6,11 @@
 /*   By: ademurge <ademurge@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/03 18:09:47 by ademurge          #+#    #+#             */
-/*   Updated: 2022/03/04 19:13:15 by ademurge         ###   ########.fr       */
+/*   Updated: 2022/03/14 18:58:50 by ademurge         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	isalpha(int c)
+int	ft_isdigit(int c)
 {
 	return ((c >= '0' && c <= '9'));
 }

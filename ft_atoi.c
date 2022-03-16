@@ -6,7 +6,7 @@
 /*   By: ademurge <ademurge@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/03 18:09:25 by ademurge          #+#    #+#             */
-/*   Updated: 2022/03/14 16:18:48 by ademurge         ###   ########.fr       */
+/*   Updated: 2022/03/14 16:29:16 by ademurge         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,9 @@
 
 int	ft_atoi(const char *str)
 {
-	int	sum;
-	int	sign;
-	int	i;
+	unsigned long long	sum;
+	int					sign;
+	int					i;
 
 	sum = 0;
 	sign = 1;
@@ -30,6 +30,12 @@ int	ft_atoi(const char *str)
 		i++;
 	}
 	while (str[i] >= '0' && str[i] <= '9')
+	{
 		sum = sum * 10 + str[i++] - 48;
+		if (sum > LLONG_MAX && sign == 1)
+			return (-1);
+		if (sum > LLONG_MAX && sign == -1)
+			return (0);
+	}
 	return (sum * sign);
 }
