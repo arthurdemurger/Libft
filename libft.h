@@ -6,7 +6,7 @@
 /*   By: ademurge <ademurge@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/04 14:38:55 by ademurge          #+#    #+#             */
-/*   Updated: 2022/03/14 16:28:21 by ademurge         ###   ########.fr       */
+/*   Updated: 2022/03/17 16:56:07 by ademurge         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,6 @@
 # include <string.h>
 # include <stdio.h>
 # include <limits.h>
-
 
 // Useful functions
 size_t			ft_strlen(const char *s);

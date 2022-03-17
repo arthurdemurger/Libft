@@ -6,7 +6,7 @@
 /*   By: ademurge <ademurge@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/03 18:09:51 by ademurge          #+#    #+#             */
-/*   Updated: 2022/03/14 14:37:20 by ademurge         ###   ########.fr       */
+/*   Updated: 2022/03/17 17:01:35 by ademurge         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ void	*ft_memccpy(void *dst, const void *src, int c, size_t n)
 		*(char *)(dst++) = *(char *)(src++);
 	if (*(char *)(src) == c)
 	{
-		*(char *)(dst++) = *(char *)(src++);
+		*(char *)(dst++) = *(char *)(src);
 		return (dst);
 	}
 	return (NULL);

@@ -6,7 +6,7 @@
 /*   By: ademurge <ademurge@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/03 18:10:15 by ademurge          #+#    #+#             */
-/*   Updated: 2022/03/14 18:46:30 by ademurge         ###   ########.fr       */
+/*   Updated: 2022/03/17 16:55:34 by ademurge         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,10 +42,3 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 				return (&str[i]);
 	return (0);
 }
-/*
-int main (void)
-{
-	char str[] = "lala";
-	char to_find[] = "";
-	printf("ft : '%s'\nma : '%s'\n", ft_strnstr(str, to_find, ), strnstr(str, to_find, 0));
-}*/
