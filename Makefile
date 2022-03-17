@@ -6,7 +6,7 @@
 #    By: ademurge <ademurge@student.s19.be>         +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/03/03 12:59:07 by arthurdemur       #+#    #+#              #
-#    Updated: 2022/03/14 16:04:23 by ademurge         ###   ########.fr        #
+#    Updated: 2022/03/17 22:12:35 by ademurge         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -21,6 +21,7 @@ SRCS		= 	ft_atoi.c \
 				ft_itoa.c \
 				ft_memccpy.c \
 				ft_memchr.c \
+				ft_memcmp.c \
 				ft_memcpy.c \
 				ft_memmove.c \
 				ft_memset.c \
