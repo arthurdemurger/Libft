@@ -6,7 +6,7 @@
 /*   By: ademurge <ademurge@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/14 14:43:50 by ademurge          #+#    #+#             */
-/*   Updated: 2022/03/18 12:12:42 by ademurge         ###   ########.fr       */
+/*   Updated: 2022/03/18 12:22:28 by ademurge         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ int	ft_lstsize(t_list *lst)
 	while (lst->next)
 	{
 		i++;
-		lst->next = lst->next->next;
+		lst = lst->next;
 	}
 	return (++i);
 }
