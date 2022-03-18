@@ -6,7 +6,7 @@
 /*   By: ademurge <ademurge@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/14 14:43:48 by ademurge          #+#    #+#             */
-/*   Updated: 2022/03/14 14:54:37 by ademurge         ###   ########.fr       */
+/*   Updated: 2022/03/18 11:45:05 by ademurge         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,12 @@
 
 t_list *ft_lstnew(void *content)
 {
-	t_list lst;
+	t_list *lst;
 
-	lst = (t_list)malloc(sizeof(t_list));
+	lst = (t_list *)malloc(sizeof(t_list));
 	if (!lst)
 		return (NULL);
+	lst->content = content;
+	lst->next = NULL;
+	return (lst);
 }
