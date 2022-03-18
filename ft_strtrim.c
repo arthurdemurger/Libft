@@ -6,7 +6,7 @@
 /*   By: ademurge <ademurge@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/03 18:23:30 by ademurge          #+#    #+#             */
-/*   Updated: 2022/03/17 16:56:21 by ademurge         ###   ########.fr       */
+/*   Updated: 2022/03/18 11:39:44 by ademurge         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,13 +25,15 @@ static int	is_in_set(char c, char const *set)
 
 static int	ft_size_to_malloc(char const *s1, char const *set)
 {
-	int	i;
-	int	count;
+	int		i;
+	size_t	count;
 
 	count = 0;
 	i = -1;
 	while (is_in_set(s1[++i], set))
 		count++;
+	if (count == ft_strlen(s1))
+		return (1);
 	i = ft_strlen(s1);
 	while (is_in_set(s1[--i], set))
 		count++;
@@ -62,13 +64,3 @@ char	*ft_strtrim(char const *s1, char const *set)
 	str[i] = 0;
 	return (str);
 }
-
-/*
-int main()
-{
-	char	*s1 = "aaaaaaa";
-
-	char	*ret = ft_strtrim(s1, "a");
-	printf("%s\n", ret);
-}
-*/
