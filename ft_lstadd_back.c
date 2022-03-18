@@ -6,13 +6,13 @@
 /*   By: ademurge <ademurge@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/14 14:43:32 by ademurge          #+#    #+#             */
-/*   Updated: 2022/03/18 12:30:07 by ademurge         ###   ########.fr       */
+/*   Updated: 2022/03/18 13:21:02 by ademurge         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void ft_lstadd_back(t_list **lst, t_list *new)
+void	ft_lstadd_back(t_list **lst, t_list *new)
 {
 	if (!*lst)
 		*lst = new;

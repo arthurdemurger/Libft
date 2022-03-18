@@ -6,7 +6,7 @@
 /*   By: ademurge <ademurge@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/04 14:38:55 by ademurge          #+#    #+#             */
-/*   Updated: 2022/03/18 00:33:29 by ademurge         ###   ########.fr       */
+/*   Updated: 2022/03/18 13:41:30 by ademurge         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,11 +37,18 @@ int				ft_isdigit(int c);
 int				ft_strncmp(const char *s1, const char *s2, size_t n);
 void			*ft_memset(void *s, int c, size_t n);
 
-// Bonus - Struct
+// Bonus
+
 typedef struct s_list
 {
 	void			*content;
 	struct s_list	*next;
 }	t_list;
+
+t_list			*ft_lstnew(void *content);
+t_list			*ft_lstlast(t_list *lst);
+void			ft_lstdelone(t_list *lst, void (*del)(void *));
+void			ft_lstclear(t_list **lst, void (*del)(void *));
+void			ft_lstadd_back(t_list **lst, t_list *new);
 
 #endif
