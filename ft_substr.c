@@ -6,41 +6,29 @@
 /*   By: ademurge <ademurge@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/03 18:22:47 by ademurge          #+#    #+#             */
-/*   Updated: 2022/03/17 16:58:35 by ademurge         ###   ########.fr       */
+/*   Updated: 2022/03/18 15:21:57 by ademurge         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static int	ft_strlen_substr(char const *s, size_t max_len)
-{
-	size_t	i;
-	char	*str;
-
-	str = (char *)s;
-	i = 0;
-	while (i < max_len && str[i])
-	{
-		i++;
-	}
-	return (i + 1);
-}
-
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
 	char	*src;
 	char	*str;
-	int		i;
+	size_t	size;
 
-	i = -1;
 	if (!s)
 		return (NULL);
+	if (start >= ft_strlen(s))
+		return (ft_strdup(""));
+	size = ft_strlen(&s[start]);
+	if (size > len)
+		size = len;
 	src = (char *)s;
-	str = (char *)malloc(sizeof(char) * ft_strlen_substr(&src[start], len));
+	str = (char *)malloc(sizeof(char) * (size + 1));
 	if (!str)
 		return (NULL);
-	while (src[++i + start])
-		str[i] = src[i + start];
-	str[i] = 0;
+	ft_strlcpy(str, &src[start], size + 1);
 	return (str);
 }
