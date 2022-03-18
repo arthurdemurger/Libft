@@ -6,7 +6,14 @@
 /*   By: ademurge <ademurge@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/14 14:43:37 by ademurge          #+#    #+#             */
-/*   Updated: 2022/03/14 14:43:38 by ademurge         ###   ########.fr       */
+/*   Updated: 2022/03/18 11:58:00 by ademurge         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
+
+void	ft_lstadd_front(t_list **lst, t_list *new)
+{
+	new->next = *(lst);
+	*lst = new;
+}
