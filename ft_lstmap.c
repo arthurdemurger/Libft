@@ -6,7 +6,7 @@
 /*   By: ademurge <ademurge@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/14 14:43:46 by ademurge          #+#    #+#             */
-/*   Updated: 2022/03/18 13:41:47 by ademurge         ###   ########.fr       */
+/*   Updated: 2022/03/18 16:02:08 by ademurge         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 	t_list	*new_lst;
 
 	new_lst = NULL;
-	while (lst && f && del)
+	while (lst && f)
 	{
 		tmp = ft_lstnew((f)(lst->content));
 		if (!tmp)
