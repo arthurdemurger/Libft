@@ -6,7 +6,17 @@
 /*   By: ademurge <ademurge@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/14 14:43:43 by ademurge          #+#    #+#             */
-/*   Updated: 2022/03/14 14:43:43 by ademurge         ###   ########.fr       */
+/*   Updated: 2022/03/18 13:25:58 by ademurge         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
+
+void	ft_lstiter(t_list *lst, void (*f)(void *))
+{
+	while (lst && f)
+	{
+		(f)(lst->content);
+		lst = lst->next;
+	}
+}
