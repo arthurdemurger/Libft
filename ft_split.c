@@ -6,11 +6,18 @@
 /*   By: ademurge <ademurge@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/03 18:23:28 by ademurge          #+#    #+#             */
-/*   Updated: 2022/03/12 15:00:30 by ademurge         ###   ########.fr       */
+/*   Updated: 2022/03/19 15:23:02 by ademurge         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+static void	ft_free(int index, char **split)
+{
+	while (index)
+		free(split[index--]);
+	free(split);
+}
 
 static char	*ft_strdup_split(const char *s, char c)
 {
@@ -100,7 +107,10 @@ char	**ft_split(char const *s, char c)
 	{
 		split_str[i] = ft_strdup_split(&s[ft_index(s, c, i + 1)], c);
 		if (!split_str[i])
+		{
+			ft_free(i, split_str);
 			return (NULL);
+		}
 	}
 	split_str[i] = 0;
 	return (split_str);
