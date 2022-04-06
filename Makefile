@@ -6,7 +6,7 @@
 #    By: ademurge <ademurge@student.s19.be>         +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/03/03 12:59:07 by arthurdemur       #+#    #+#              #
-#    Updated: 2022/03/18 19:11:59 by ademurge         ###   ########.fr        #
+#    Updated: 2022/04/06 15:52:37 by ademurge         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -19,7 +19,6 @@ SRCS			= 	ft_atoi.c \
 					ft_isdigit.c \
 					ft_isprint.c \
 					ft_itoa.c \
-					ft_memccpy.c \
 					ft_memchr.c \
 					ft_memcmp.c \
 					ft_memcpy.c \
@@ -32,6 +31,7 @@ SRCS			= 	ft_atoi.c \
 					ft_split.c \
 					ft_strchr.c \
 					ft_strdup.c \
+					ft_striteri.c \
 					ft_strjoin.c \
 					ft_strlcat.c \
 					ft_strlcpy.c \
