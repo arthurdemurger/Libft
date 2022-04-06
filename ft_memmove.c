@@ -6,7 +6,7 @@
 /*   By: ademurge <ademurge@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/03 18:09:57 by ademurge          #+#    #+#             */
-/*   Updated: 2022/03/18 16:15:39 by ademurge         ###   ########.fr       */
+/*   Updated: 2022/04/06 17:27:26 by ademurge         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,8 +19,8 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 	size_t	i;
 
 	i = -1;
-	tmp_dst = (char *)dst;
-	tmp_src = (char *)src;
+	tmp_dst = (unsigned char *)dst;
+	tmp_src = (unsigned char *)src;
 	if (tmp_dst > tmp_src)
 		while (len--)
 			tmp_dst[len] = tmp_src[len];

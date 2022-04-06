@@ -6,7 +6,7 @@
 /*   By: ademurge <ademurge@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/03 18:10:00 by ademurge          #+#    #+#             */
-/*   Updated: 2022/03/17 23:59:27 by ademurge         ###   ########.fr       */
+/*   Updated: 2022/04/06 17:27:33 by ademurge         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,6 @@ void	*ft_memset(void *s, int c, size_t n)
 
 	tmp = s;
 	while (n--)
-		*(char *)(tmp++) = c;
+		*(unsigned char *)(tmp++) = c;
 	return (s);
 }
