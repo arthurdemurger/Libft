@@ -6,7 +6,7 @@
 /*   By: ademurge <ademurge@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/03 18:24:48 by ademurge          #+#    #+#             */
-/*   Updated: 2022/03/11 08:47:03 by ademurge         ###   ########.fr       */
+/*   Updated: 2022/04/11 12:38:52 by ademurge         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ void	ft_putnbr_fd(int n, int fd)
 	ln = n;
 	if (n < 0)
 	{
-		ln = -ln;
+		ln *= -1;
 		ft_putchar_fd('-', fd);
 	}
 	if (ln > 9)

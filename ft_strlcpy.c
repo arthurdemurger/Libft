@@ -6,11 +6,13 @@
 /*   By: ademurge <ademurge@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/03 18:10:09 by ademurge          #+#    #+#             */
-/*   Updated: 2022/03/04 19:51:26 by ademurge         ###   ########.fr       */
+/*   Updated: 2022/04/11 13:33:40 by ademurge         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-unsigned int	ft_strlcpy(char *dest, char *src, unsigned int size)
+#include "libft.h"
+
+unsigned int	ft_strlcpy(char *dest, const char *src, size_t size)
 {
 	unsigned int	i;
 	unsigned int	c;

@@ -6,7 +6,7 @@
 /*   By: ademurge <ademurge@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/03 18:23:49 by ademurge          #+#    #+#             */
-/*   Updated: 2022/03/12 14:55:39 by ademurge         ###   ########.fr       */
+/*   Updated: 2022/04/11 12:47:24 by ademurge         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 		return (NULL);
 	i = -1;
 	while (s[++i])
-		str[i] = (f)(i, s[i]);
+		str[i] = (f)((unsigned int) i, s[i]);
 	str[i] = 0;
 	return (str);
 }
