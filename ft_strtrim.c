@@ -6,12 +6,11 @@
 /*   By: ademurge <ademurge@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/03 18:23:30 by ademurge          #+#    #+#             */
-/*   Updated: 2022/04/13 15:11:42 by ademurge         ###   ########.fr       */
+/*   Updated: 2022/04/14 00:27:27 by ademurge         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
 
 static int	is_in_set(char c, char const *set)
 {
@@ -24,44 +23,18 @@ static int	is_in_set(char c, char const *set)
 	return (0);
 }
 
-static int	ft_size_to_malloc(char const *s1, char const *set)
-{
-	int		i;
-	size_t	count;
-
-	count = 0;
-	i = -1;
-	while (is_in_set(s1[++i], set))
-		count++;
-	if (count == ft_strlen(s1))
-		return (1);
-	i = ft_strlen(s1);
-	while (is_in_set(s1[--i], set))
-		count++;
-	return (ft_strlen(s1) - count + 1);
-}
-
 char	*ft_strtrim(char const *s1, char const *set)
 {
-	char	*str;
-	int		start;
 	int		end;
 	int		i;
 
 	if (!s1 || !set)
 		return (NULL);
-	str = (char *)malloc(ft_size_to_malloc(s1, set) * sizeof(char));
-	if (!str)
-		return (NULL);
-	start = 0;
-	end = ft_strlen(s1) - 1;
 	i = 0;
-	while (is_in_set(s1[start], set))
-		start++;
-	while (is_in_set(s1[end], set))
-		end--;
-	while (start <= end)
-		str[i++] = s1[start++];
-	str[i] = 0;
-	return (str);
+	while (is_in_set(*s1, set))
+		s1++;
+	end = ft_strlen(s1) - 1;
+	while (end > 0 && is_in_set(s1[end--], set))
+		i++;
+	return (ft_substr(s1, 0, ft_strlen(s1) - i));
 }
