@@ -6,11 +6,12 @@
 /*   By: ademurge <ademurge@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/03 18:23:30 by ademurge          #+#    #+#             */
-/*   Updated: 2022/04/11 16:08:44 by ademurge         ###   ########.fr       */
+/*   Updated: 2022/04/13 15:11:42 by ademurge         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
 
 static int	is_in_set(char c, char const *set)
 {

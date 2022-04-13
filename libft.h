@@ -6,7 +6,7 @@
 /*   By: ademurge <ademurge@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/04 14:38:55 by ademurge          #+#    #+#             */
-/*   Updated: 2022/04/11 15:07:04 by ademurge         ###   ########.fr       */
+/*   Updated: 2022/04/13 14:45:52 by ademurge         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,8 +36,8 @@ void			*ft_memmove(void *dst, const void *src, size_t len);
 void			*ft_memchr(const void *s, int c, size_t n);
 int				ft_memcmp(const void *s1, const void *s2, size_t n);
 size_t			ft_strlen(const char *s);
-unsigned int	ft_strlcpy(char *dest, const char *src, size_t size);
-unsigned int	ft_strlcat(char *dest, const char *src, unsigned int nb);
+size_t			ft_strlcpy(char *dest, const char *src, size_t size);
+size_t			ft_strlcat(char *dest, const char *src, size_t nb);
 char			*ft_strchr(const char *s, int c);
 char			*ft_strrchr(const char *s, int c);
 char			*ft_strnstr(const char *big, const char *little, size_t len);
