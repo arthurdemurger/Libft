@@ -6,7 +6,7 @@
 /*   By: ademurge <ademurge@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/03 18:10:15 by ademurge          #+#    #+#             */
-/*   Updated: 2022/04/11 15:10:21 by ademurge         ###   ########.fr       */
+/*   Updated: 2022/04/20 17:14:35 by ademurge         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,11 +26,11 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 		while (big[i + j] == little[j] && i + j < len)
 		{
 			if (!little[j])
-				return ((char *)big + i);
+				return ((char *)big[i]);
 			j++;
 		}
 		if (!little[j])
-			return ((char *)big + i);
+			return ((char *)big[i]);
 		i++;
 	}
 	return (NULL);
