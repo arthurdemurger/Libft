@@ -56,7 +56,7 @@ BONUS_SRCS		=	ft_lstadd_back.c \
 					ft_lstsize.c
 
 
-OBJS			= ${SRCS:.c=.o}
+OBJS			= $(addprefix srcs/, ${SRCS:.c=.o})
 
 BONUS_OBJ		= ${addsuffix _bonus.c, ${BONUS_SRCS}}
 
